@@ -21,7 +21,7 @@ class ObjetoVacio:
 #================================================
 #  nada es un ObjetoVacio
 #================================================
-nada = ObjetosVacio()
+nada = ObjetoVacio()
 print(type(nada))
 
 #================================================
@@ -36,8 +36,8 @@ class Llanta:
     cuenta = 0
     #============================================
     #  Funcion constructura de identidad 
-    #   init es una funcion reservada
-    #  comienza uno mismo:self
+    #  __init__ es una funcion reservada
+    #  comienza uno mismo: self
     #  pero puede ser otro nombre (mi)
     #  parametros de entrada = default
     #==============================================
@@ -73,7 +73,7 @@ print("Total de llantas:",Llanta.cuenta) #Variable global de la clase
 print("Presion de la llanta 4 = ",llanta4.presion) #Presion de la llanta 4
 print("Radio de la llanta 4 = ",llanta4.radio)
 print("Radio de llanta 3 =",llanta3.radio)
-print("Presion de la llanta 1 de micoche = ",micoche.llanta1.presion)
+print("Presion de la llanta 1 de mi coche = ",micoche.llanta1.presion)
 #===================================0
 # Encapsulamiento
 #===============================
@@ -84,9 +84,12 @@ print("Presion de la llanta 1 de micoche = ",micoche.llanta1.presion)
 class Estudiante:
     def __init__(mi):
         mi.__nombre = ''
-    def ponerme_nombre(mi,nombre):
+    def ponerme_nombre(mi, nombre):
         print('se llamo a ponerme_nombre')
-        mi.__nombre
+        mi.__nombre = nombre
+    def obtener_nombre(mi):
+        print('se llamo a obtener_nombre')
+        return mi.__nombre   
     nombre=property(obtener_nombre,ponerme_nombre)
 
 #======================================================================
@@ -95,7 +98,7 @@ class Estudiante:
 estudiante = Estudiante()
 
 #================================================================
-# Ponerle nombre usando la propiedad nombre y el metodo
+# Ponerle nombre usando la propiedad nombre y el metodo ponerme_nombre
 # (sin tener que llamar explicitamente la funcion)
 #================================================================
 estudiante.nombre = "Diego"
@@ -128,7 +131,7 @@ class Cuadrilatero:
 #  su hijo rectangulo
 #  rectangulo es hijo de cuadrilatero 
 #  Rectangulo(Cuadrilatero):
-#==========================================================0
+#==========================================================
 class Rectangulo(Cuadrilatero):
     def __init__(self, a, b):
         #===================================================
@@ -158,7 +161,7 @@ class Cuadrado(Rectangulo):
 cuadrado1 = Cuadrado(5)
 
 #===========================================
-#  Llamar al metodo perimetor de su abuelo cuadrilatero
+#  Llamar al metodo perimetro de su abuelo cuadrilatero
 #=======================================================
 perimetro1 = cuadrado1.perimetro()
 
@@ -171,3 +174,6 @@ print("Perimetro = ", perimetro1)
 print("Area = ",area1)
 
 #=============================================================
+# Sobre-escribir un metodo de su madre o abuela o tatarabuela...
+# Es volver a definir una funcion ya existente
+#==============================================================

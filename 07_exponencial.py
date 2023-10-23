@@ -10,7 +10,7 @@
 
 #=============================================
 #   Importancia de modulos
-#   contienen objetos y funciobnes 
+#   contienen objetos y funciones 
 #=============================================
 import matplotlib.pyplot as grafica
 import math
@@ -44,10 +44,10 @@ def exponencial_pro(n:int=150,x:float=1.0):
         s = 1/s
     return s
 
-m=400
+m = 400
 serie = 250
-error1= []
-error2= []
+error1 = []
+error2 = []
 x0 = 0.0
 b = list(range(m))
 x= [x0+n*0.1 for n in b] # multiplicar una lista por un numero

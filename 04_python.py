@@ -75,7 +75,47 @@ print(capitales)
 d = {}
 
 # llave entera, valor string
+numeros={1:"uno",2:"dos",3:"tres"}
+
+# llave real, valor string
 decimales={1.5:"uno y medio", 2.5: "dos y medio", 3.5:"tres y medio"}
+
+# llave tupla, valor string
+cosas={("Parker","Reynolds","Camlin"):"pluma", ("LG","Whirpool","Samsung"): "refrigerador"}
+
+# llave string, valor int
+romanos = {'I':1, 'II':2,'III':3, 'IV':4, 'V':5}
+print(romanos)
+print(romanos["I"])
+
+print(capitales.get("India"))
+print(capitales.get("India"))
+
+# Reportar llave y valor
+for k in capitales:
+    print("Key ="+ k +", Value = "+ capitales[k])
+
+# Nuevo dato para el diccionario
+capitales["Mexico"] = "CDMX"    
+print(capitales)
+
+# Borra dato del diccionario
+del capitales["Mexico"] 
+print(capitales)
+
+# Borra todo el diccionario
+del capitales
+
+# Reportar llaves 
+print(romanos.keys())
+
+# Reportar valores 
+print(romanos.values())
+
+# Juicio de llave (esta o no esta la llave en el diccionario)
+print("I" in romanos)
+print("X" in romanos)
+print("XX" not in romanos)
 
 
 
