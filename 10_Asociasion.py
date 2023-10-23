@@ -11,6 +11,7 @@ class A:
     __a:float=0.0
     __b:float=0.0
     __c:float=0.0
+
     def __init__(self,a:float,b:float,c:float):
         self.a = a
         self.b = b
@@ -38,7 +39,7 @@ class B:
 
 #======================================
 # ASOCIACION 
-#  Usando objetos independientes 
+# Usando objetos independientes 
 #=======================================
 objetoA = A(1.0,2.0,3.0)
 objetoB = B(4.0,5.0)
@@ -60,7 +61,7 @@ class C:
         self.Aa = A(1.0,2.0,3.0)
 
     def sumar_todo(self):
-        x:float=self.d+self.e+self.Aa.b
+        x:float=self.d+self.e+self.Aa.a+self.Aa.b
         return x
 
 #==========================================
@@ -70,6 +71,9 @@ class C:
 objetoC = C(4.0,5.0)
 print(objetoC.sumar_todo())
 
+#============================================
+# Objeto D tiene dos reales y un objeto A
+# definido por fuera
 #============================================
 class D: 
     __d:float=0.0
