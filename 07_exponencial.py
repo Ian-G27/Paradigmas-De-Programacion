@@ -1,7 +1,7 @@
 #=============================================
 #    Ian Diego Buendia Alvarez
 #=============================================
-#    Matematicfa Algoritmica
+#    Matematica Algoritmica
 #    Paradigmas de programacion
 #    ESFN IPN Septiembre 2023
 #=============================================
