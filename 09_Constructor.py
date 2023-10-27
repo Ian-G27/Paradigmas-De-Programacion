@@ -22,7 +22,7 @@ class Computadora:
         print(f"Accediendo al constructor de la pc: {marca}")
         self.marca = marca
         self.capacidad = capacidad
-        self.ram
+        self.ram = ram
 
     def imprimirInfoPC(self):
         print(f"Esta es la computadora marca: {self.marca} con almacenamiento de {self.capacidad}GB y memoria de {self.ram}GB")
@@ -70,7 +70,7 @@ class Persona:
 def funcion1():
     persona = Persona("Carlos","Perez",40,"Xochimilco","Lenovo",700,8)
     print("\n")
-    persona.impŕimirInfo()
+    persona.imprimirInfo()
     print("\n")
     persona2 = Persona("Magdalena", "Carrillo",35,"Jalapa","IBM",200,4)
     print("\n")

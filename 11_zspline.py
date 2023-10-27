@@ -4,7 +4,7 @@
 #  Ian Diego Buendia Alvarez
 #===================================================
 import numpy as np
-from curva import Curvas,zspline
+from curva import curva,zspline
 import matplotlib.pyplot as plt 
 import math
 #=================================================
