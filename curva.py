@@ -23,7 +23,7 @@ class Curva:
     # Constructor
     #=================================
     def __init__(s, x:float=[], dim:int=3):
-     
+    
         s.x = np.array(x,dtype=np.float64)
         s.dim:np.int32 = dim
         s.n:np.int32 = int(len(s.x)/s.dim)    # Numero de puntos
@@ -46,10 +46,10 @@ class Curva:
 
          # Tupla de variables a imprimir 
          for i in range(0,s.n):
-            s.tup = (s.x[i],)
-            for ii in range(1,s.dim):
-                s.tup = s.tup + (s.x[i+ii*s.n],)
-            print(s.formato % s.tup)
+             s.tup = (s.x[i],)
+             for ii in range(1,s.dim):
+                 s.tup = s.tup + (s.x[i+ii*s.n],)
+             print(s.formato % s.tup)
 
         #===================================
         # Longitud punto a punto
@@ -179,23 +179,3 @@ def zspline(puntos,dim,n,cont):
         [x[i],y[i]] = curva.interpolacion(cont,r)
 
     return x,y
-
-
-    
-
-
-
-        
-
-
-
-
-
-
-
-                
-
-         
-         
-
-
