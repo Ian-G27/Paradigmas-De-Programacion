@@ -4,9 +4,10 @@
 #  Ian Diego Buendia Alvarez
 #===================================================
 import numpy as np
-from curva import curva,zspline
-import matplotlib.pyplot as plt 
+from Curva import Curva,zspline
+import matplotlib.pyplot as plt
 import math
+
 #=================================================
 #  conjunto de puntos
 #=================================================
@@ -17,7 +18,7 @@ dim:np.int32 = 2
 # Memoria para puntos
 puntos = np.zeros(dim*nump,dtype=np.float64)
 # Parametrizacion
-X = np.linspace(0.0,2*np.py,nump+1)
+X = np.linspace(0.0,2*np.pi,nump+1)
 # Cordenada x
 puntos[0:nump] = np.cos(X[0:nump]) + 0.0*np.sin(2*X[0:nump])
 #  cordenada y
