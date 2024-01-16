@@ -10,6 +10,7 @@ from numba import cuda
 from numba.cuda.random import create_xoroshiro128p_states
 from numba.cuda.random import xoroshiro128p_uniform_float64
 import random
+import numpy as np
 
 #============================================================
 #   Kernel de cuda para simulacion Montecarlo en el GPU

@@ -51,7 +51,7 @@ if __name__ == "__main__":
         #===========================
         #  Enviar mensaje s al dest
         #===========================
-        commm.send(s, dest=destino)
+        comm.send(s, dest=destino)
 
         #===================================
         #  Recibir de source y lo pone en m
